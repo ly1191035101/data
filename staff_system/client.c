@@ -4,6 +4,7 @@
 #include <sys/socket.h>
 #include <linux/in.h>
 #include <string.h>
+
 #define N 128
 void Administrator_login(int sockfd);
 void user_login(int sockfd);
@@ -312,7 +313,7 @@ void admin_amend(int sockfd)
 			send(sockfd,buf,sizeof(buf),0);
 			break;
 		case 10:
-			send(sockfd,"1",sizeof("1"),0);
+			send(sockfd,"4",sizeof("4"),0);
 			break;
 		default:
 			printf("输入错误请重新输入");

@@ -515,7 +515,7 @@ void user_amend()
 		}else{
 			sprintf(buf,"%s 将 %s 修改为 %s",username,type,new);
 			date_history(buf);
-			if(type[0]!='4'){
+			if(type[0]!='p'){
 				send(acceptfd,buf,sizeof(buf),0);
 			}else{
 				sprintf(buf,"%s 将 %s 修改为 %s",username,type,new);
